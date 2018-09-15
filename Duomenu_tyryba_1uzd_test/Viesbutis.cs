@@ -20,5 +20,6 @@ namespace Duomenu_tyryba_1uzd_test
             this.Atstumas_iki_centro = Atstumas_iki_centro;
             this.Vidutine_kaina = Vidutine_kaina;
         }
+        //test
     }
 }
