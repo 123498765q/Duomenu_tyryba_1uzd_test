@@ -20,6 +20,20 @@ namespace Duomenu_tyryba_1uzd_test
             this.Atstumas_iki_centro = Atstumas_iki_centro;
             this.Vidutine_kaina = Vidutine_kaina;
         }
-        //test
+        public Viesbutis()
+        {
+          
+        }
+
+        //public double calculateOptimal(double vK, double aIc, int rate, double Vkaina, double Vatstumas, int vRate)
+        //{
+        //    double d = Math.Sqrt(Math.Pow((vK - Vkaina), 2) + Math.Pow((aIc - Vatstumas), 2) + Math.Pow((rate - vRate), 2));
+        //    return d;
+        //}
+        public double calculateOptimal(double vK, double aIc, int rate, Viesbutis v)
+        {
+            double d = Math.Sqrt(Math.Pow((vK - v.Vidutine_kaina), 2) + Math.Pow((aIc - v.Atstumas_iki_centro), 2) + Math.Pow((rate - v.Zvaigzdutes), 2));
+            return d;
+        }
     }
 }
