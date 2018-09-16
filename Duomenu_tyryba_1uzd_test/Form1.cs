@@ -15,10 +15,10 @@ namespace Duomenu_tyryba_1uzd_test
        
 
         List<Viesbutis> viesbuciaiAll = new List<Viesbutis>() {
-                new Viesbutis("Congress", 3, 12.6, 40),
-                new Viesbutis("Embassy", 4, 2, 150),
-                new Viesbutis("Europa", 3, 0.6, 100),
-                new Viesbutis("LR Seimo", 1, 0.5, 5)
+                new Viesbutis("Congress", 4 , 0.1, 94),
+                new Viesbutis("Embassy", 4, 3, 60),
+                new Viesbutis("Europa", 4, 1, 110),
+                new Viesbutis("Radisson", 4, 1.5, 103)
 
             };
         public Form1()
@@ -29,7 +29,11 @@ namespace Duomenu_tyryba_1uzd_test
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            List<Viesbutis> pagrindinis = viesbuciaiAll.ToList();
+            foreach (var tekstas in pagrindinis)
+            {
+                groupBox1.Text = groupBox1.Text +"\n" + tekstas.Pavadinimas+ " "+ tekstas.Zvaigzdutes +" žvaigždutės "+ tekstas.Atstumas_iki_centro+ " km "+tekstas.Vidutine_kaina+ " €"+"\n";
+            }
         }
 
         private void Calculate_Click(object sender, EventArgs e)
