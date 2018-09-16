@@ -34,6 +34,7 @@
             this.vartotojoKaina = new System.Windows.Forms.TextBox();
             this.vartotojoAtstumas = new System.Windows.Forms.TextBox();
             this.vartotojoRate = new System.Windows.Forms.TextBox();
+            this.optimalOut = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // vAll
@@ -88,11 +89,20 @@
             this.vartotojoRate.Size = new System.Drawing.Size(100, 22);
             this.vartotojoRate.TabIndex = 5;
             // 
+            // optimalOut
+            // 
+            this.optimalOut.AutoSize = true;
+            this.optimalOut.Location = new System.Drawing.Point(193, 356);
+            this.optimalOut.Name = "optimalOut";
+            this.optimalOut.Size = new System.Drawing.Size(0, 17);
+            this.optimalOut.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1077, 514);
+            this.Controls.Add(this.optimalOut);
             this.Controls.Add(this.vartotojoRate);
             this.Controls.Add(this.vartotojoAtstumas);
             this.Controls.Add(this.vartotojoKaina);
@@ -116,6 +126,7 @@
         private System.Windows.Forms.TextBox vartotojoKaina;
         private System.Windows.Forms.TextBox vartotojoAtstumas;
         private System.Windows.Forms.TextBox vartotojoRate;
+        private System.Windows.Forms.Label optimalOut;
     }
 }
 
