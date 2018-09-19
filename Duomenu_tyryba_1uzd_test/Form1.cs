@@ -15,16 +15,15 @@ namespace Duomenu_tyryba_1uzd_test
        
 
         List<Viesbutis> viesbuciaiAll = new List<Viesbutis>() {
-                new Viesbutis("Congress", 4 , 0.1, 94),
-                new Viesbutis("Embassy", 4, 3, 60),
-                new Viesbutis("Europa", 4, 1, 110),
-                new Viesbutis("Radisson", 4, 1.5, 103)
+                new Viesbutis("Congress", 3 , 0.1, 94),
+                new Viesbutis("Embassy", 2, 3, 60),
+                new Viesbutis("Europa", 4, 1, 300),
+                new Viesbutis("Radisson", 5, 1, 320)
 
             };
         public Form1()
         {
             InitializeComponent();
-            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -38,17 +37,27 @@ namespace Duomenu_tyryba_1uzd_test
 
         private void Calculate_Click(object sender, EventArgs e)
         {
+
+            double kainos_kofas = Convert.ToDouble(TB_priceKofas.Text)/100;
+            double zvaigzduciu_kofas = Convert.ToDouble(TB_rateKofas.Text);
+            double atstumo_kofas = Convert.ToDouble(TB_distanceKofas.Text);
+
             optimalOut.Text = "";
             double vartKaina = Convert.ToInt32(vartotojoKaina.Text);
             double vartAtstumas = Convert.ToInt32(vartotojoAtstumas.Text);
             int vartRate = Convert.ToInt32(vartotojoRate.Text);
+
             List<double> calculations = new List<double>();
+            //double kA = 1 - kainos_kofas;
+            //double zA = 1 - zvaigzduciu_kofas;
+            //double aA = 1 - atstumo_kofas;
+
             foreach (var vies in viesbuciaiAll)
             {
-                double calc = vies.calculateOptimal(vartKaina, vartAtstumas, vartRate, vies);
+                double calc = vies.calculateOptimal(vartKaina, vartAtstumas, vartRate, vies, kainos_kofas, atstumo_kofas, zvaigzduciu_kofas);
+                //double calc = vies.calculateOptimal(vartKaina, vartAtstumas, vartRate, vies, kA, zA, aA);
                 vies.d = calc;
                 calculations.Add(calc);
-
             }
             double index = calculations.Min();
             List<Viesbutis> optimals = viesbuciaiAll.Where(viesbutis => viesbutis.d.Equals(index)).ToList();

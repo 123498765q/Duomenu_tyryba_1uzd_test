@@ -30,9 +30,9 @@ namespace Duomenu_tyryba_1uzd_test
             this.Vidutine_kaina = Vidutine_kaina;
         }
 
-        public double calculateOptimal(double vK, double aIc, int rate, Viesbutis v)
+        public double calculateOptimal(double vK, double aIc, int rate, Viesbutis v, double price_Kofas, double distance_Kofas, double rate_Kofas)
         {
-            double d = Math.Sqrt(Math.Pow((vK - v.Vidutine_kaina), 2) + Math.Pow((aIc - v.Atstumas_iki_centro), 2) + Math.Pow((rate - v.Zvaigzdutes), 2));
+            double d = Math.Sqrt(Math.Pow(price_Kofas*(vK - v.Vidutine_kaina), 2) + Math.Pow(distance_Kofas*(aIc - v.Atstumas_iki_centro), 2) + Math.Pow(rate_Kofas*(rate - v.Zvaigzdutes), 2));
             return d;
         }
     }
