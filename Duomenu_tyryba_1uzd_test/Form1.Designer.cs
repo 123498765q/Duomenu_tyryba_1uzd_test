@@ -28,22 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.vAll = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.optimalOut = new System.Windows.Forms.Label();
             this.Calculate = new System.Windows.Forms.Button();
-            this.vartotojoKaina = new System.Windows.Forms.TextBox();
-            this.vartotojoAtstumas = new System.Windows.Forms.TextBox();
-            this.vartotojoRate = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.TB_rateKofas = new System.Windows.Forms.TextBox();
-            this.TB_distanceKofas = new System.Windows.Forms.TextBox();
-            this.TB_priceKofas = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
+            this.HotelsData = new System.Windows.Forms.ListView();
+            this.txt_optimalManhattan = new System.Windows.Forms.Label();
+            this.txt_optimalEuclidean = new System.Windows.Forms.Label();
+            this.price_CB = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.stars_CB = new System.Windows.Forms.ComboBox();
+            this.Pageidavimai = new System.Windows.Forms.GroupBox();
+            this.virtuve_C = new System.Windows.Forms.CheckBox();
+            this.kacialka_C = new System.Windows.Forms.CheckBox();
+            this.parkingas_C = new System.Windows.Forms.CheckBox();
+            this.minibaras_C = new System.Windows.Forms.CheckBox();
+            this.gyvunai_C = new System.Windows.Forms.CheckBox();
+            this.neigaliems_C = new System.Windows.Forms.CheckBox();
+            this.kondicionierius_C = new System.Windows.Forms.CheckBox();
+            this.wifi_C = new System.Windows.Forms.CheckBox();
+            this.balkonas_C = new System.Windows.Forms.CheckBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.rate_CB = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.meals_CB = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.distance_CB = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.Pageidavimai.SuspendLayout();
             this.SuspendLayout();
             // 
             // vAll
@@ -54,48 +65,12 @@
             this.vAll.Size = new System.Drawing.Size(0, 17);
             this.vAll.TabIndex = 0;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.InfoText;
-            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.optimalOut);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(1035, 228);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Viešbučiai mieste";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(672, 62);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(259, 27);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Tinkamiausias viešbutis:";
-            // 
-            // optimalOut
-            // 
-            this.optimalOut.AutoSize = true;
-            this.optimalOut.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.optimalOut.Location = new System.Drawing.Point(671, 108);
-            this.optimalOut.Name = "optimalOut";
-            this.optimalOut.Size = new System.Drawing.Size(0, 36);
-            this.optimalOut.TabIndex = 6;
-            // 
             // Calculate
             // 
             this.Calculate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Calculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Calculate.Location = new System.Drawing.Point(244, 460);
-            this.Calculate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Calculate.Location = new System.Drawing.Point(769, 653);
+            this.Calculate.Margin = new System.Windows.Forms.Padding(4);
             this.Calculate.Name = "Calculate";
             this.Calculate.Size = new System.Drawing.Size(205, 39);
             this.Calculate.TabIndex = 2;
@@ -103,115 +78,303 @@
             this.Calculate.UseVisualStyleBackColor = true;
             this.Calculate.Click += new System.EventHandler(this.Calculate_Click);
             // 
-            // vartotojoKaina
+            // HotelsData
             // 
-            this.vartotojoKaina.Location = new System.Drawing.Point(17, 466);
-            this.vartotojoKaina.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.vartotojoKaina.Name = "vartotojoKaina";
-            this.vartotojoKaina.Size = new System.Drawing.Size(155, 22);
-            this.vartotojoKaina.TabIndex = 3;
+            this.HotelsData.Location = new System.Drawing.Point(12, 12);
+            this.HotelsData.Name = "HotelsData";
+            this.HotelsData.Size = new System.Drawing.Size(1201, 410);
+            this.HotelsData.TabIndex = 13;
+            this.HotelsData.UseCompatibleStateImageBehavior = false;
             // 
-            // vartotojoAtstumas
+            // txt_optimalManhattan
             // 
-            this.vartotojoAtstumas.Location = new System.Drawing.Point(17, 390);
-            this.vartotojoAtstumas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.vartotojoAtstumas.Name = "vartotojoAtstumas";
-            this.vartotojoAtstumas.Size = new System.Drawing.Size(155, 22);
-            this.vartotojoAtstumas.TabIndex = 4;
+            this.txt_optimalManhattan.AutoSize = true;
+            this.txt_optimalManhattan.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_optimalManhattan.Location = new System.Drawing.Point(77, 791);
+            this.txt_optimalManhattan.Name = "txt_optimalManhattan";
+            this.txt_optimalManhattan.Size = new System.Drawing.Size(0, 32);
+            this.txt_optimalManhattan.TabIndex = 14;
             // 
-            // vartotojoRate
+            // txt_optimalEuclidean
             // 
-            this.vartotojoRate.Location = new System.Drawing.Point(17, 309);
-            this.vartotojoRate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.vartotojoRate.Name = "vartotojoRate";
-            this.vartotojoRate.Size = new System.Drawing.Size(155, 22);
-            this.vartotojoRate.TabIndex = 5;
+            this.txt_optimalEuclidean.AutoSize = true;
+            this.txt_optimalEuclidean.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_optimalEuclidean.Location = new System.Drawing.Point(710, 791);
+            this.txt_optimalEuclidean.Name = "txt_optimalEuclidean";
+            this.txt_optimalEuclidean.Size = new System.Drawing.Size(0, 29);
+            this.txt_optimalEuclidean.TabIndex = 15;
             // 
-            // label1
+            // price_CB
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.WindowText;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(16, 276);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(355, 31);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Įveskite žvaigždučių kiekį:";
+            this.price_CB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.price_CB.FormattingEnabled = true;
+            this.price_CB.Items.AddRange(new object[] {
+            "30 - 50 €",
+            "50 - 130 €",
+            "130 - 200 €",
+            "200 - 300 €",
+            "300 € ir daugiau"});
+            this.price_CB.Location = new System.Drawing.Point(22, 54);
+            this.price_CB.Name = "price_CB";
+            this.price_CB.Size = new System.Drawing.Size(121, 24);
+            this.price_CB.TabIndex = 16;
             // 
-            // label2
+            // label4
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.WindowText;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label2.Location = new System.Drawing.Point(16, 357);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(364, 31);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Įveskite atstumą iki centro:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(19, 33);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 18);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Kaina";
             // 
-            // label3
+            // label5
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.WindowText;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label3.Location = new System.Drawing.Point(16, 433);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(203, 31);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Įveskite kainą:";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(210, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(78, 18);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Reitingas";
             // 
-            // TB_rateKofas
+            // stars_CB
             // 
-            this.TB_rateKofas.Location = new System.Drawing.Point(510, 285);
-            this.TB_rateKofas.Name = "TB_rateKofas";
-            this.TB_rateKofas.Size = new System.Drawing.Size(100, 22);
-            this.TB_rateKofas.TabIndex = 10;
+            this.stars_CB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.stars_CB.FormattingEnabled = true;
+            this.stars_CB.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.stars_CB.Location = new System.Drawing.Point(213, 54);
+            this.stars_CB.Name = "stars_CB";
+            this.stars_CB.Size = new System.Drawing.Size(121, 24);
+            this.stars_CB.TabIndex = 18;
             // 
-            // TB_distanceKofas
+            // Pageidavimai
             // 
-            this.TB_distanceKofas.Location = new System.Drawing.Point(510, 390);
-            this.TB_distanceKofas.Name = "TB_distanceKofas";
-            this.TB_distanceKofas.Size = new System.Drawing.Size(100, 22);
-            this.TB_distanceKofas.TabIndex = 11;
+            this.Pageidavimai.Controls.Add(this.virtuve_C);
+            this.Pageidavimai.Controls.Add(this.kacialka_C);
+            this.Pageidavimai.Controls.Add(this.parkingas_C);
+            this.Pageidavimai.Controls.Add(this.minibaras_C);
+            this.Pageidavimai.Controls.Add(this.gyvunai_C);
+            this.Pageidavimai.Controls.Add(this.neigaliems_C);
+            this.Pageidavimai.Controls.Add(this.kondicionierius_C);
+            this.Pageidavimai.Controls.Add(this.wifi_C);
+            this.Pageidavimai.Controls.Add(this.balkonas_C);
+            this.Pageidavimai.Controls.Add(this.label9);
+            this.Pageidavimai.Controls.Add(this.rate_CB);
+            this.Pageidavimai.Controls.Add(this.label7);
+            this.Pageidavimai.Controls.Add(this.meals_CB);
+            this.Pageidavimai.Controls.Add(this.label6);
+            this.Pageidavimai.Controls.Add(this.distance_CB);
+            this.Pageidavimai.Controls.Add(this.label4);
+            this.Pageidavimai.Controls.Add(this.label5);
+            this.Pageidavimai.Controls.Add(this.price_CB);
+            this.Pageidavimai.Controls.Add(this.stars_CB);
+            this.Pageidavimai.Location = new System.Drawing.Point(22, 456);
+            this.Pageidavimai.Name = "Pageidavimai";
+            this.Pageidavimai.Size = new System.Drawing.Size(952, 182);
+            this.Pageidavimai.TabIndex = 20;
+            this.Pageidavimai.TabStop = false;
+            this.Pageidavimai.Text = "Pageidavimai";
             // 
-            // TB_priceKofas
+            // virtuve_C
             // 
-            this.TB_priceKofas.Location = new System.Drawing.Point(488, 469);
-            this.TB_priceKofas.Name = "TB_priceKofas";
-            this.TB_priceKofas.Size = new System.Drawing.Size(100, 22);
-            this.TB_priceKofas.TabIndex = 12;
+            this.virtuve_C.AutoSize = true;
+            this.virtuve_C.Location = new System.Drawing.Point(328, 142);
+            this.virtuve_C.Name = "virtuve_C";
+            this.virtuve_C.Size = new System.Drawing.Size(112, 21);
+            this.virtuve_C.TabIndex = 34;
+            this.virtuve_C.Text = "Mini virtuvėlė";
+            this.virtuve_C.UseVisualStyleBackColor = true;
+            // 
+            // kacialka_C
+            // 
+            this.kacialka_C.AutoSize = true;
+            this.kacialka_C.Location = new System.Drawing.Point(177, 142);
+            this.kacialka_C.Name = "kacialka_C";
+            this.kacialka_C.Size = new System.Drawing.Size(135, 21);
+            this.kacialka_C.TabIndex = 33;
+            this.kacialka_C.Text = "Treniruoklių salė";
+            this.kacialka_C.UseVisualStyleBackColor = true;
+            // 
+            // parkingas_C
+            // 
+            this.parkingas_C.AutoSize = true;
+            this.parkingas_C.Location = new System.Drawing.Point(17, 142);
+            this.parkingas_C.Name = "parkingas_C";
+            this.parkingas_C.Size = new System.Drawing.Size(140, 21);
+            this.parkingas_C.TabIndex = 32;
+            this.parkingas_C.Text = "Parkavimosi vieta";
+            this.parkingas_C.UseVisualStyleBackColor = true;
+            // 
+            // minibaras_C
+            // 
+            this.minibaras_C.AutoSize = true;
+            this.minibaras_C.Location = new System.Drawing.Point(728, 104);
+            this.minibaras_C.Name = "minibaras_C";
+            this.minibaras_C.Size = new System.Drawing.Size(91, 21);
+            this.minibaras_C.TabIndex = 31;
+            this.minibaras_C.Text = "Minibaras";
+            this.minibaras_C.UseVisualStyleBackColor = true;
+            // 
+            // gyvunai_C
+            // 
+            this.gyvunai_C.AutoSize = true;
+            this.gyvunai_C.Location = new System.Drawing.Point(547, 104);
+            this.gyvunai_C.Name = "gyvunai_C";
+            this.gyvunai_C.Size = new System.Drawing.Size(165, 21);
+            this.gyvunai_C.TabIndex = 30;
+            this.gyvunai_C.Text = "Leidžiamas augintinis";
+            this.gyvunai_C.UseVisualStyleBackColor = true;
+            // 
+            // neigaliems_C
+            // 
+            this.neigaliems_C.AutoSize = true;
+            this.neigaliems_C.Location = new System.Drawing.Point(359, 104);
+            this.neigaliems_C.Name = "neigaliems_C";
+            this.neigaliems_C.Size = new System.Drawing.Size(166, 21);
+            this.neigaliems_C.TabIndex = 29;
+            this.neigaliems_C.Text = "Pritaikytas neįgaliems";
+            this.neigaliems_C.UseVisualStyleBackColor = true;
+            // 
+            // kondicionierius_C
+            // 
+            this.kondicionierius_C.AutoSize = true;
+            this.kondicionierius_C.Location = new System.Drawing.Point(213, 104);
+            this.kondicionierius_C.Name = "kondicionierius_C";
+            this.kondicionierius_C.Size = new System.Drawing.Size(126, 21);
+            this.kondicionierius_C.TabIndex = 28;
+            this.kondicionierius_C.Text = "Kondicionierius";
+            this.kondicionierius_C.UseVisualStyleBackColor = true;
+            // 
+            // wifi_C
+            // 
+            this.wifi_C.AutoSize = true;
+            this.wifi_C.Location = new System.Drawing.Point(131, 104);
+            this.wifi_C.Name = "wifi_C";
+            this.wifi_C.Size = new System.Drawing.Size(62, 21);
+            this.wifi_C.TabIndex = 27;
+            this.wifi_C.Text = "Wi-Fi";
+            this.wifi_C.UseVisualStyleBackColor = true;
+            // 
+            // balkonas_C
+            // 
+            this.balkonas_C.AutoSize = true;
+            this.balkonas_C.Location = new System.Drawing.Point(17, 104);
+            this.balkonas_C.Name = "balkonas_C";
+            this.balkonas_C.Size = new System.Drawing.Size(88, 21);
+            this.balkonas_C.TabIndex = 26;
+            this.balkonas_C.Text = "Balkonas";
+            this.balkonas_C.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(786, 33);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(125, 18);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "Lankytojų balas";
+            // 
+            // rate_CB
+            // 
+            this.rate_CB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.rate_CB.FormattingEnabled = true;
+            this.rate_CB.Items.AddRange(new object[] {
+            "1-2",
+            "3-4",
+            "5-6",
+            "7-8",
+            "9-10"});
+            this.rate_CB.Location = new System.Drawing.Point(789, 54);
+            this.rate_CB.Name = "rate_CB";
+            this.rate_CB.Size = new System.Drawing.Size(121, 24);
+            this.rate_CB.TabIndex = 24;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(589, 33);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(101, 18);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Maitinimas *";
+            // 
+            // meals_CB
+            // 
+            this.meals_CB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.meals_CB.FormattingEnabled = true;
+            this.meals_CB.Items.AddRange(new object[] {
+            "Nėra",
+            "P",
+            "P + P",
+            "P + P + V",
+            "Neribotas maistas"});
+            this.meals_CB.Location = new System.Drawing.Point(592, 54);
+            this.meals_CB.Name = "meals_CB";
+            this.meals_CB.Size = new System.Drawing.Size(121, 24);
+            this.meals_CB.TabIndex = 22;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(401, 33);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(148, 18);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Atsumas iki centro";
+            // 
+            // distance_CB
+            // 
+            this.distance_CB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.distance_CB.FormattingEnabled = true;
+            this.distance_CB.Items.AddRange(new object[] {
+            "1 - 3 km",
+            "3 - 5 km",
+            "5 - 10 km",
+            "10 - 20 km",
+            "20 ir daugiau"});
+            this.distance_CB.Location = new System.Drawing.Point(404, 54);
+            this.distance_CB.Name = "distance_CB";
+            this.distance_CB.Size = new System.Drawing.Size(121, 24);
+            this.distance_CB.TabIndex = 20;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(19, 641);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(276, 51);
+            this.label8.TabIndex = 21;
+            this.label8.Text = " *P - pusryčiai \r\n  P + P - pusryčiai + pietūs, \r\n  P + P + V - pusryčiai + pietū" +
+    "s + vakarienė";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1077, 514);
-            this.Controls.Add(this.TB_priceKofas);
-            this.Controls.Add(this.TB_distanceKofas);
-            this.Controls.Add(this.TB_rateKofas);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.vartotojoRate);
-            this.Controls.Add(this.vartotojoAtstumas);
-            this.Controls.Add(this.vartotojoKaina);
+            this.ClientSize = new System.Drawing.Size(1225, 1095);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.Pageidavimai);
+            this.Controls.Add(this.txt_optimalEuclidean);
+            this.Controls.Add(this.txt_optimalManhattan);
+            this.Controls.Add(this.HotelsData);
             this.Controls.Add(this.Calculate);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.vAll);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Pageidavimai.ResumeLayout(false);
+            this.Pageidavimai.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,19 +383,31 @@
         #endregion
 
         private System.Windows.Forms.Label vAll;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button Calculate;
-        private System.Windows.Forms.TextBox vartotojoKaina;
-        private System.Windows.Forms.TextBox vartotojoAtstumas;
-        private System.Windows.Forms.TextBox vartotojoRate;
-        private System.Windows.Forms.Label optimalOut;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListView HotelsData;
+        private System.Windows.Forms.Label txt_optimalManhattan;
+        private System.Windows.Forms.Label txt_optimalEuclidean;
+        private System.Windows.Forms.ComboBox price_CB;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox TB_rateKofas;
-        private System.Windows.Forms.TextBox TB_distanceKofas;
-        private System.Windows.Forms.TextBox TB_priceKofas;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox stars_CB;
+        private System.Windows.Forms.GroupBox Pageidavimai;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox meals_CB;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox distance_CB;
+        private System.Windows.Forms.CheckBox balkonas_C;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox rate_CB;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox wifi_C;
+        private System.Windows.Forms.CheckBox minibaras_C;
+        private System.Windows.Forms.CheckBox gyvunai_C;
+        private System.Windows.Forms.CheckBox neigaliems_C;
+        private System.Windows.Forms.CheckBox kondicionierius_C;
+        private System.Windows.Forms.CheckBox virtuve_C;
+        private System.Windows.Forms.CheckBox kacialka_C;
+        private System.Windows.Forms.CheckBox parkingas_C;
     }
 }
 
