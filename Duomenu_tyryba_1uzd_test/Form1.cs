@@ -80,7 +80,8 @@ namespace Duomenu_tyryba_1uzd_test
             }
             else
             {
-                MessageBox.Show("Įveskite reikiamus duomenis.");
+                MessageBox.Show("Įveskite reikiamus duomenis",
+                    "Trūksta duomenų");
             }
 
         }
