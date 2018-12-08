@@ -69,7 +69,7 @@
             // 
             this.Calculate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Calculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Calculate.Location = new System.Drawing.Point(769, 653);
+            this.Calculate.Location = new System.Drawing.Point(759, 840);
             this.Calculate.Margin = new System.Windows.Forms.Padding(4);
             this.Calculate.Name = "Calculate";
             this.Calculate.Size = new System.Drawing.Size(205, 39);
@@ -82,27 +82,29 @@
             // 
             this.HotelsData.Location = new System.Drawing.Point(12, 12);
             this.HotelsData.Name = "HotelsData";
-            this.HotelsData.Size = new System.Drawing.Size(1201, 410);
+            this.HotelsData.Size = new System.Drawing.Size(1999, 569);
             this.HotelsData.TabIndex = 13;
             this.HotelsData.UseCompatibleStateImageBehavior = false;
             // 
             // txt_optimalManhattan
             // 
             this.txt_optimalManhattan.AutoSize = true;
-            this.txt_optimalManhattan.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_optimalManhattan.Location = new System.Drawing.Point(77, 791);
+            this.txt_optimalManhattan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_optimalManhattan.Location = new System.Drawing.Point(1036, 611);
             this.txt_optimalManhattan.Name = "txt_optimalManhattan";
-            this.txt_optimalManhattan.Size = new System.Drawing.Size(0, 32);
+            this.txt_optimalManhattan.Size = new System.Drawing.Size(110, 20);
             this.txt_optimalManhattan.TabIndex = 14;
+            this.txt_optimalManhattan.Text = "Manhatanas";
             // 
             // txt_optimalEuclidean
             // 
             this.txt_optimalEuclidean.AutoSize = true;
-            this.txt_optimalEuclidean.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_optimalEuclidean.Location = new System.Drawing.Point(710, 791);
+            this.txt_optimalEuclidean.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_optimalEuclidean.Location = new System.Drawing.Point(1424, 614);
             this.txt_optimalEuclidean.Name = "txt_optimalEuclidean";
-            this.txt_optimalEuclidean.Size = new System.Drawing.Size(0, 29);
+            this.txt_optimalEuclidean.Size = new System.Drawing.Size(80, 20);
             this.txt_optimalEuclidean.TabIndex = 15;
+            this.txt_optimalEuclidean.Text = "Euklidas";
             // 
             // price_CB
             // 
@@ -175,9 +177,9 @@
             this.Pageidavimai.Controls.Add(this.label5);
             this.Pageidavimai.Controls.Add(this.price_CB);
             this.Pageidavimai.Controls.Add(this.stars_CB);
-            this.Pageidavimai.Location = new System.Drawing.Point(22, 456);
+            this.Pageidavimai.Location = new System.Drawing.Point(12, 599);
             this.Pageidavimai.Name = "Pageidavimai";
-            this.Pageidavimai.Size = new System.Drawing.Size(952, 182);
+            this.Pageidavimai.Size = new System.Drawing.Size(952, 226);
             this.Pageidavimai.TabIndex = 20;
             this.Pageidavimai.TabStop = false;
             this.Pageidavimai.Text = "Pageidavimai";
@@ -350,7 +352,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(19, 641);
+            this.label8.Location = new System.Drawing.Point(9, 828);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(276, 51);
             this.label8.TabIndex = 21;
@@ -361,7 +363,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1225, 1095);
+            this.ClientSize = new System.Drawing.Size(2048, 928);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.Pageidavimai);
             this.Controls.Add(this.txt_optimalEuclidean);

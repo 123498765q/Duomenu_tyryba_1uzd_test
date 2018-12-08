@@ -14,12 +14,50 @@ namespace Duomenu_tyryba_1uzd_test
     {
         List<Viesbutis> viesbuciaiAll = new List<Viesbutis>() {
                            //pavadinimas,zvaigzdutes, atstumas, kaina, maitinimas, vertLan, balkonas, wifi, kondicionierius, neigaliems, augintinis, mbaras, parkingas, kacialka, virtuve
-                new Viesbutis("TESTHOTEL", 3,           2,        4,        3,        3,       1,      1,          0,            1,           1,        0,       1,        0,       1 ),
-                new Viesbutis("TESTHOTEL222", 1,           1,        3,        2,        0,       0,      1,          1,            1,           0,        0,       0,        0,       1 ),
-                //new Viesbutis("Congress", 3 , 0.1, 94),
-                //new Viesbutis("Embassy", 2, 3, 60),
-                //new Viesbutis("Europa", 4, 1, 300),
-                //new Viesbutis("Radisson", 5, 1, 320)
+                new Viesbutis("Silken Al-Andalus Palace",  3,   1,   1,  1,   3, 0,   1,    1,  1,  1,  1,  1,  1,  0 ),
+                new Viesbutis("Hotel Boutique Elvira Plaza",   2,   1  , 1 ,  1  , 3,  0   ,1 ,  1 ,  1   ,1 ,  1   ,1   ,0  , 0),
+                new Viesbutis("Monte Carmelo", 3  , 1   ,2  , 1  , 3  , 0 ,  1  , 1,   1 ,  1  , 1 ,  0  , 0,   0),
+                new Viesbutis("Casona de San Andrés" , 2 ,  0   ,1 , 1  , 3  , 0 , 1 , 1   ,1,   1   ,1 ,  0   ,0,  0),
+                new Viesbutis("Hotel Alfonso XIII",    4  , 0  , 4  , 1  , 4  , 1  , 1,   1  , 1 , 1  ,1,   1 ,  1  , 0),
+                new Viesbutis("Itaca Sevilla", 2 ,  0 ,  2 ,  1   ,3 ,  0  , 1 ,  1,   1 ,  1,   1 ,  1,   1,   0),
+                new Viesbutis( "Hotel Casa Imperial",   3,   0,   2,   1,   3,   1,   1,   1,   1,   0,   0,   1,   1,   0),
+                new Viesbutis("Hotel Sevilla Center",  3,   0,   1,   1,   3,   0,   1,   1,   1,   1,   1,   1,   1,   0),
+                new Viesbutis("Hesperia Sevilla",  3,   0,   1,   1,   3,   0,   1,   1,   1,   1,   1,   1 ,  1,   0),
+                new Viesbutis("Ribera de Triana Hotel",    3,   0,   2,   1,   3,   1,   1,   1,   1,   1,   1,   1,   1,   0),
+                new Viesbutis("NH Collection Sevilla", 3,   0,   1,   1,   3,   0,   1,  1,   1,   1,   1,   1,   1,   0),
+                new Viesbutis("Eurostars Regina",  2,   0,   2 ,  1 ,  3  , 0  , 1 ,  1 ,  1  , 1  , 1   ,1,   1  , 0),
+                new Viesbutis("NH Sevilla Plaza de Armas", 3,   0 ,  2  , 1  , 3,  1 , 1  , 1 ,  1 , 1  ,1   ,1 ,  1 ,  0),
+                new Viesbutis("Exe Sevilla Macarena" , 3,  0 ,  2 , 1 , 3  , 0 ,  1,   1 ,  1  , 1 ,  1, 0  , 1 ,  0),
+                new Viesbutis("AC Hotel Sevilla Torneo",   3,   0 ,  1 ,  1 , 3 ,  1,   1 ,  1 , 1   ,1,   1,   1,  1,   0),
+                new Viesbutis("M.A. Hotel Sevilla Congresos" , 3 ,  2 ,  1 ,  1,   3 ,  1  , 1 ,  1 ,  1,   1,   1,   1,   1,   0),
+                new Viesbutis("Monte Triana", 3,  0  , 2 ,  1 ,  4,  0 ,  1  , 1,   1  , 1 ,  1 ,  1 , 1 ,  0),
+                new Viesbutis("Pasarela" , 3 ,  0 , 2  , 1 ,  3 , 0  , 1 ,  1 ,  1 ,  1 ,  1 ,  1,   1  , 0),
+                new Viesbutis("Hotel Fernando III" ,   3 ,  0 ,  2 ,  1  , 3,   0  , 1  , 1 , 1  , 1,   1 , 0  , 1 ,  0),
+                new Viesbutis("Hotel Don Paco",    2,   0 ,  1  , 1,   3,   0,   1,   1,   1,   1,   1,   0,   0,   0),
+                new Viesbutis("Melia Lebreros" ,   3,   0 ,  2,   1,   3 ,  0 ,  1 ,  1 ,  1 ,  1,   1  , 1 ,  0 ,  0),
+                new Viesbutis("Hilton Garden Inn Sevilla", 3 ,  1  , 1 ,  1  , 3 ,  1,   1  , 1 , 1  , 1  ,1  , 1 ,  1  , 0),
+                new Viesbutis("Suites Murillo"  ,  1 ,  0 ,  1 ,  1 ,  4 ,  1  , 1,   1 ,  1  , 1 ,  1 ,  1 ,  1  , 0),
+                new Viesbutis("Hotel Bécquer", 3 ,  0 ,  1 ,  1 ,  4  , 0 ,  1 ,  1   ,1 ,  1 ,  1 ,  1 ,  1,   0),
+                new Viesbutis("AACR Hotel Monteolivos" ,   2 ,  0 ,  1 ,  1,  3  , 0 ,  1  ,1 ,  1 ,  1 ,  1  , 0 ,  1 ,  0),
+                new Viesbutis("Hotel Alcázar", 2 ,  0  , 1 ,  1 ,  3   ,0 ,  1,   1  , 1  , 1  , 1 ,  0  , 1 ,  0),
+                new Viesbutis("Eurostars Torre Sevilla" , 4  , 0 , 2  , 1 ,  4  , 0  , 1,   1 ,  1,   1,   1,   0 ,  1,   0),
+                new Viesbutis("Catalonia Giralda" ,3  , 0 ,  2,   1,   3,   0,   1,   1,   1,   1,   1,   0,   1,   0),
+                new Viesbutis("Petit Palace Puerta de Triana", 2,   0,   2,   1,   4,   0,   1,   1,   1,   1,   1,   0,   1,   0),
+                new Viesbutis("Hotel Bécquer"  , 3 ,  0 ,  1  , 1   ,4  , 0  , 1 ,  1 ,  1 ,  1 ,  1  , 1  , 0 ,  0),
+                new Viesbutis("Hotel Gravina 51",  3 ,  0,   3  , 1 ,  4   ,0   ,1 ,  1 ,  1  , 1  , 1  , 1  , 1,   0),
+                new Viesbutis("Gran Meliá Colon" , 4 ,  0  , 2 ,  1  , 4,  0 , 1 ,  1 , 1  , 1 ,  1,  0  , 1 ,  0),
+                new Viesbutis("Hotel Casa 1800 Sevilla"  , 3,  0 ,  2 ,  1 ,  4 ,  1,  1,   1,   1,   1  , 1,   0 ,  1 ,  0),
+                new Viesbutis("Sacristia de Santa Ana" ,   2 ,  0 ,  2 ,  1,   3  , 0,  1  , 1   ,1  , 1 ,  1 ,  1 ,  1,   0),
+                new Viesbutis("Palacio Pinello"  , 3 , 0   ,3 ,  1 ,  4  , 0  , 1,  1  , 1   ,1 ,  1 ,  1  , 1  , 0),
+                new Viesbutis("San Gil"  , 3 ,  0 ,  2,  1 ,  3 ,  1 ,  1 ,  1   ,1 ,  1 , 1  , 1  , 0 ,  0),
+                new Viesbutis("Hotel Doña Lin"   , 1 , 0  , 1 ,  1 ,  3   ,0 ,  1 ,  1 ,  1  , 1 ,  1 ,  0 ,  0  , 0),
+                new Viesbutis("Las Casas de El Arenal" ,   3 ,  0,   2  , 1  , 4 ,  0  , 1 ,  1 ,  1 , 1  , 1  , 1,  0 ,  0),
+                new Viesbutis("Hotel Boutique Elvira Plaza",  2  , 0,  2 ,  1,   3 ,  1 ,  1,   1 ,  1,   1  , 1  , 1 ,  0 ,  0),
+                new Viesbutis("Hotel Sevilla",  1  , 0,  2 ,  1,   2 ,  0 ,  1,   1 ,  1,   1  , 1  , 0 ,  0 ,  0),
+                new Viesbutis("SINTETINIS",  4  , 4,  4 ,  4,   4 ,  1 ,  1,   1 ,  1,   1  , 1  , 1 ,  1 ,  1),
+                new Viesbutis("SINTETINIS2",  0  , 0,  0 ,  0,   0 ,  0 ,  0,   0 ,  0,   0  , 0  , 0 ,  0 ,  0),
+                new Viesbutis("SINTETINIS3",  4  , 4,  4 ,  4,   4 ,  0 ,  0,   0 ,  0,   0  , 0  , 0 ,  0 ,  0),
+                new Viesbutis("SINTETINIS4",  0  , 0,  0 ,  0,   0 ,  1 ,  1,   1 ,  1,   1  , 1  , 1 ,  1 ,  1),
             };
         List<Viesbutis> viesbuciaiZeroOne = new List<Viesbutis>();
 
@@ -28,6 +66,7 @@ namespace Duomenu_tyryba_1uzd_test
 
         public Form1()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
         }
 
@@ -45,8 +84,8 @@ namespace Duomenu_tyryba_1uzd_test
                 txt_optimalEuclidean.Text = "";
                 txt_optimalManhattan.Text = "";
 
-                List<double> calculationsEuclidean = new List<double>();
-                List<double> calculationsManhattan = new List<double>();
+                List<Viesbutis> calculationsEuclidean = new List<Viesbutis>();
+                List<Viesbutis> calculationsManhattan = new List<Viesbutis>();
 
                 foreach (var vies in viesbuciaiZeroOne)
                 {
@@ -55,7 +94,7 @@ namespace Duomenu_tyryba_1uzd_test
                         gymValueInput, kitchenValueInput, vies);
 
                     vies.dManhattan = calcManhattan;
-                    calculationsManhattan.Add(calcManhattan);
+                    calculationsManhattan.Add(vies);
 
 
                     double calcEuclidean = vies.calculateOptimalEuclidean(starsValueInput, distanceValueInput, priceValueInput, mealsValueInput, rateValueInput, balconyValueInput,
@@ -63,20 +102,35 @@ namespace Duomenu_tyryba_1uzd_test
                         gymValueInput, kitchenValueInput, vies);
 
                     vies.dEuclidean = calcEuclidean;
-                    calculationsEuclidean.Add(calcEuclidean);
+                    calculationsEuclidean.Add(vies);
                 }
+                calculationsEuclidean = calculationsEuclidean.OrderBy(a => a.dEuclidean).ToList();
+                calculationsManhattan = calculationsManhattan.OrderBy(a => a.dManhattan).ToList();
 
-                double minIndexEuclidean = calculationsEuclidean.Min();
-                List<Viesbutis> optimalsEuclidean = viesbuciaiZeroOne.Where(viesbutis => viesbutis.dEuclidean.Equals(minIndexEuclidean)).ToList();
+                txt_optimalEuclidean.Text = "Euklidas Jums rekomenduoja:\n" + "1) " + calculationsEuclidean[0].Pavadinimas + " " + calculationsEuclidean[0].dEuclidean + "\n" +
+                                                                              "2) " + calculationsEuclidean[1].Pavadinimas + " " + calculationsEuclidean[1].dEuclidean + "\n" +
+                                                                              "3) " + calculationsEuclidean[2].Pavadinimas + " " + calculationsEuclidean[2].dEuclidean + "\n" +
+                                                                              "4) " + calculationsEuclidean[3].Pavadinimas + " " + calculationsEuclidean[3].dEuclidean + "\n" +
+                                                                              "5) " + calculationsEuclidean[4].Pavadinimas + " " + calculationsEuclidean[4].dEuclidean;
 
-                double minIndexManhattan = calculationsManhattan.Min();
-                List<Viesbutis> optimalsManhattan = viesbuciaiZeroOne.Where(viesbutis => viesbutis.dManhattan.Equals(minIndexManhattan)).ToList();
+                txt_optimalManhattan.Text = "Manhatanas Jums rekomenduoja:\n" + "1) " + calculationsManhattan[0].Pavadinimas + " " + calculationsManhattan[0].dManhattan + "\n" +
+                                                                              "2) " + calculationsManhattan[1].Pavadinimas + " " + calculationsManhattan[1].dManhattan + "\n" +
+                                                                              "3) " + calculationsManhattan[2].Pavadinimas + " " + calculationsManhattan[2].dManhattan + "\n" +
+                                                                              "4) " + calculationsManhattan[3].Pavadinimas + " " + calculationsManhattan[3].dManhattan + "\n" +
+                                                                              "5) " + calculationsManhattan[4].Pavadinimas + " " + calculationsManhattan[4].dManhattan;
 
-                foreach (Viesbutis hE in optimalsEuclidean)
-                {
-                    txt_optimalEuclidean.Text += "Euklidas Jums rekomenduoja:\n" + hE.Pavadinimas + " " + hE.dEuclidean;
-                    txt_optimalManhattan.Text += "Manhattanas Jums rekomenduoja:\n" + hE.Pavadinimas + " " + hE.dManhattan;
-                }
+
+                //double minIndexEuclidean = calculationsEuclidean.Min();
+                //List<Viesbutis> optimalsEuclidean = viesbuciaiZeroOne.Where(viesbutis => viesbutis.dEuclidean.Equals(minIndexEuclidean)).ToList();
+
+                //double minIndexManhattan = calculationsManhattan.Min();
+                //List<Viesbutis> optimalsManhattan = viesbuciaiZeroOne.Where(viesbutis => viesbutis.dManhattan.Equals(minIndexManhattan)).ToList();
+
+                //foreach (Viesbutis hE in calculationsEuclidean)
+                //{
+                //    txt_optimalEuclidean.Text += "Euklidas Jums rekomenduoja:\n" + hE.Pavadinimas + " " + hE.dEuclidean;
+                //    txt_optimalManhattan.Text += "Manhattanas Jums rekomenduoja:\n" + hE.Pavadinimas + " " + hE.dManhattan;
+                //}
             }
             else
             {
@@ -331,7 +385,7 @@ namespace Duomenu_tyryba_1uzd_test
         {
             int counter = 1;
             HotelsData.View = View.Details;
-            HotelsData.Columns.Add("Viešbučio numeris");
+            HotelsData.Columns.Add("Eil. Nr.");
             HotelsData.Columns.Add("Pavadinimas     ");
             HotelsData.Columns.Add("Reitingas");
             HotelsData.Columns.Add("Atstumas iki centro");
@@ -351,7 +405,24 @@ namespace Duomenu_tyryba_1uzd_test
             HotelsData.Columns.Add("Mini virtuvė");
 
 
-            HotelsData.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+            //HotelsData.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+            HotelsData.Columns[0].Width = 35;
+            HotelsData.Columns[1].Width = 180;
+            HotelsData.Columns[2].Width = 80;
+            HotelsData.Columns[3].Width = 115;
+            HotelsData.Columns[4].Width = 110;
+            HotelsData.Columns[5].Width = 70;
+            HotelsData.Columns[6].Width = 95;
+            HotelsData.Columns[7].Width = 70;
+            HotelsData.Columns[8].Width = 40;
+            HotelsData.Columns[9].Width = 90;
+            HotelsData.Columns[10].Width = 130;
+            HotelsData.Columns[11].Width = 115;
+            HotelsData.Columns[12].Width = 65;
+            HotelsData.Columns[13].Width = 85;
+            HotelsData.Columns[14].Width = 110;
+            HotelsData.Columns[15].Width = 70;
+
             foreach (Viesbutis hotel in viesbuciaiAll)
             {
                 int indexReitingas = Convert.ToInt32(hotel.Zvaigzdutes);
@@ -459,6 +530,7 @@ namespace Duomenu_tyryba_1uzd_test
 
                 HotelsData.Items.Add(new ListViewItem(new string[] {counter.ToString(), hotel.Pavadinimas, reitingas, atstumas, kaina, maitinimas, lankytojuBalas,
                                                                     balkonas, wifi, kondicionierius, kambarys_neigaliems, augintinis, minibaras, parkingas, kacialka, virtuve}));
+                HotelsData.Items.Add(new ListViewItem(new string[] { }));
                 counter++;
             }
 
