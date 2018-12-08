@@ -119,18 +119,6 @@ namespace Duomenu_tyryba_1uzd_test
                                                                               "4) " + calculationsManhattan[3].Pavadinimas + " " + calculationsManhattan[3].dManhattan + "\n" +
                                                                               "5) " + calculationsManhattan[4].Pavadinimas + " " + calculationsManhattan[4].dManhattan;
 
-
-                //double minIndexEuclidean = calculationsEuclidean.Min();
-                //List<Viesbutis> optimalsEuclidean = viesbuciaiZeroOne.Where(viesbutis => viesbutis.dEuclidean.Equals(minIndexEuclidean)).ToList();
-
-                //double minIndexManhattan = calculationsManhattan.Min();
-                //List<Viesbutis> optimalsManhattan = viesbuciaiZeroOne.Where(viesbutis => viesbutis.dManhattan.Equals(minIndexManhattan)).ToList();
-
-                //foreach (Viesbutis hE in calculationsEuclidean)
-                //{
-                //    txt_optimalEuclidean.Text += "Euklidas Jums rekomenduoja:\n" + hE.Pavadinimas + " " + hE.dEuclidean;
-                //    txt_optimalManhattan.Text += "Manhattanas Jums rekomenduoja:\n" + hE.Pavadinimas + " " + hE.dManhattan;
-                //}
             }
             else
             {
