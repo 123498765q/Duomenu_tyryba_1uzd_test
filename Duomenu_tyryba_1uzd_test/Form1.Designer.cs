@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.vAll = new System.Windows.Forms.Label();
             this.Calculate = new System.Windows.Forms.Button();
             this.HotelsData = new System.Windows.Forms.ListView();
@@ -54,7 +55,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.distance_CB = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.Pageidavimai.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // vAll
@@ -90,7 +94,7 @@
             // 
             this.txt_optimalManhattan.AutoSize = true;
             this.txt_optimalManhattan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_optimalManhattan.Location = new System.Drawing.Point(1036, 501);
+            this.txt_optimalManhattan.Location = new System.Drawing.Point(1036, 688);
             this.txt_optimalManhattan.Name = "txt_optimalManhattan";
             this.txt_optimalManhattan.Size = new System.Drawing.Size(110, 20);
             this.txt_optimalManhattan.TabIndex = 14;
@@ -100,7 +104,7 @@
             // 
             this.txt_optimalEuclidean.AutoSize = true;
             this.txt_optimalEuclidean.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_optimalEuclidean.Location = new System.Drawing.Point(1424, 504);
+            this.txt_optimalEuclidean.Location = new System.Drawing.Point(1422, 688);
             this.txt_optimalEuclidean.Name = "txt_optimalEuclidean";
             this.txt_optimalEuclidean.Size = new System.Drawing.Size(80, 20);
             this.txt_optimalEuclidean.TabIndex = 15;
@@ -359,11 +363,32 @@
             this.label8.Text = " *P - pusryčiai \r\n  P + P - pusryčiai + pietūs, \r\n  P + P + V - pusryčiai + pietū" +
     "s + vakarienė";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(979, 489);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(927, 196);
+            this.groupBox1.TabIndex = 22;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Aprašymas";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(729, 90);
+            this.label1.TabIndex = 0;
+            this.label1.Text = resources.GetString("label1.Text");
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 928);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.Pageidavimai);
             this.Controls.Add(this.txt_optimalEuclidean);
@@ -373,10 +398,12 @@
             this.Controls.Add(this.vAll);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Viešbučio parinktuvas";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Pageidavimai.ResumeLayout(false);
             this.Pageidavimai.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -410,6 +437,8 @@
         private System.Windows.Forms.CheckBox virtuve_C;
         private System.Windows.Forms.CheckBox kacialka_C;
         private System.Windows.Forms.CheckBox parkingas_C;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

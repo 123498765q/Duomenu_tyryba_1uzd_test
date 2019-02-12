@@ -54,10 +54,10 @@ namespace Duomenu_tyryba_1uzd_test
                 new Viesbutis("Las Casas de El Arenal" ,   3 ,  0,   2  , 1  , 4 ,  0  , 1 ,  1 ,  1 , 1  , 1  , 1,  0 ,  0),
                 new Viesbutis("Hotel Boutique Elvira Plaza",  2  , 0,  2 ,  1,   3 ,  1 ,  1,   1 ,  1,   1  , 1  , 1 ,  0 ,  0),
                 new Viesbutis("Hotel Sevilla",  1  , 0,  2 ,  1,   2 ,  0 ,  1,   1 ,  1,   1  , 1  , 0 ,  0 ,  0),
-                new Viesbutis("SINTETINIS",  4  , 4,  4 ,  4,   4 ,  1 ,  1,   1 ,  1,   1  , 1  , 1 ,  1 ,  1),
-                new Viesbutis("SINTETINIS2",  0  , 0,  0 ,  0,   0 ,  0 ,  0,   0 ,  0,   0  , 0  , 0 ,  0 ,  0),
-                new Viesbutis("SINTETINIS3",  4  , 4,  4 ,  4,   4 ,  0 ,  0,   0 ,  0,   0  , 0  , 0 ,  0 ,  0),
-                new Viesbutis("SINTETINIS4",  0  , 0,  0 ,  0,   0 ,  1 ,  1,   1 ,  1,   1  , 1  , 1 ,  1 ,  1),
+                //new Viesbutis("SINTETINIS",  4  , 4,  4 ,  4,   4 ,  1 ,  1,   1 ,  1,   1  , 1  , 1 ,  1 ,  1),
+                //new Viesbutis("SINTETINIS2",  0  , 0,  0 ,  0,   0 ,  0 ,  0,   0 ,  0,   0  , 0  , 0 ,  0 ,  0),
+                //new Viesbutis("SINTETINIS3",  4  , 4,  4 ,  4,   4 ,  0 ,  0,   0 ,  0,   0  , 0  , 0 ,  0 ,  0),
+                //new Viesbutis("SINTETINIS4",  0  , 0,  0 ,  0,   0 ,  1 ,  1,   1 ,  1,   1  , 1  , 1 ,  1 ,  1),
             };
         List<Viesbutis> viesbuciaiZeroOne = new List<Viesbutis>();
 
@@ -87,6 +87,26 @@ namespace Duomenu_tyryba_1uzd_test
                 List<Viesbutis> calculationsEuclidean = new List<Viesbutis>();
                 List<Viesbutis> calculationsManhattan = new List<Viesbutis>();
 
+                ////Spartos testavimas euklido
+                //for (int i = 0; i < 10000000; i++)
+                //{
+                //    Random r1 = new Random();
+                //    int r1I = r1.Next(4);
+
+                //    Viesbutis h = new Viesbutis("NASUMO_TESTAS", r1I, r1I, r1I, r1I, r1I, 1, 1, 1, 1, 1, 1, 1, 1, 1);
+                //    calculationsEuclidean.Add(h);
+                //}
+
+                ////Spartos testavimas Manhatano
+                //for (int i = 0; i < 10000000; i++)
+                //{
+                //    Random r1 = new Random();
+                //    int r1I = r1.Next(4);
+
+                //    Viesbutis h = new Viesbutis("NASUMO_TESTAS", r1I, r1I, r1I, r1I, r1I, 1, 1, 1, 1, 1, 1, 1, 1, 1);
+                //    calculationsManhattan.Add(h);
+                //}
+
                 foreach (var vies in viesbuciaiZeroOne)
                 {
                     double calcManhattan = vies.calculateOptimalManhattan(starsValueInput, distanceValueInput, priceValueInput, mealsValueInput, rateValueInput, balconyValueInput,
@@ -104,20 +124,21 @@ namespace Duomenu_tyryba_1uzd_test
                     vies.dEuclidean = calcEuclidean;
                     calculationsEuclidean.Add(vies);
                 }
+                
                 calculationsEuclidean = calculationsEuclidean.OrderBy(a => a.dEuclidean).ToList();
                 calculationsManhattan = calculationsManhattan.OrderBy(a => a.dManhattan).ToList();
 
-                txt_optimalEuclidean.Text = "Euklidas Jums rekomenduoja:\n" + "1) " + calculationsEuclidean[0].Pavadinimas + " " + calculationsEuclidean[0].dEuclidean + "\n" +
-                                                                              "2) " + calculationsEuclidean[1].Pavadinimas + " " + calculationsEuclidean[1].dEuclidean + "\n" +
-                                                                              "3) " + calculationsEuclidean[2].Pavadinimas + " " + calculationsEuclidean[2].dEuclidean + "\n" +
-                                                                              "4) " + calculationsEuclidean[3].Pavadinimas + " " + calculationsEuclidean[3].dEuclidean + "\n" +
-                                                                              "5) " + calculationsEuclidean[4].Pavadinimas + " " + calculationsEuclidean[4].dEuclidean;
+                txt_optimalEuclidean.Text = "Euklidas Jums rekomenduoja:\n\n" + "1) " + calculationsEuclidean[0].Pavadinimas + " " /*+ calculationsEuclidean[0].dEuclidean*/ + "\n\n" +
+                                                                              "2) " + calculationsEuclidean[1].Pavadinimas + " " /*+ calculationsEuclidean[1].dEuclidean*/ + "\n\n" +
+                                                                              "3) " + calculationsEuclidean[2].Pavadinimas + " " /*+ calculationsEuclidean[2].dEuclidean*/ + "\n\n" +
+                                                                              "4) " + calculationsEuclidean[3].Pavadinimas + " " /*+ calculationsEuclidean[3].dEuclidean*/ + "\n\n" +
+                                                                              "5) " + calculationsEuclidean[4].Pavadinimas + " " /*+ calculationsEuclidean[4].dEuclidean*/;
 
-                txt_optimalManhattan.Text = "Manhatanas Jums rekomenduoja:\n" + "1) " + calculationsManhattan[0].Pavadinimas + " " + calculationsManhattan[0].dManhattan + "\n" +
-                                                                              "2) " + calculationsManhattan[1].Pavadinimas + " " + calculationsManhattan[1].dManhattan + "\n" +
-                                                                              "3) " + calculationsManhattan[2].Pavadinimas + " " + calculationsManhattan[2].dManhattan + "\n" +
-                                                                              "4) " + calculationsManhattan[3].Pavadinimas + " " + calculationsManhattan[3].dManhattan + "\n" +
-                                                                              "5) " + calculationsManhattan[4].Pavadinimas + " " + calculationsManhattan[4].dManhattan;
+                txt_optimalManhattan.Text = "Manhatanas Jums rekomenduoja:\n\n" + "1) " + calculationsManhattan[0].Pavadinimas + " " /*+ calculationsManhattan[0].dManhattan*/ + "\n\n" +
+                                                                              "2) " + calculationsManhattan[1].Pavadinimas + " " /*+ calculationsManhattan[1].dManhattan*/ + "\n\n" +
+                                                                              "3) " + calculationsManhattan[2].Pavadinimas + " " /*+ calculationsManhattan[2].dManhattan*/ + "\n\n" +
+                                                                              "4) " + calculationsManhattan[3].Pavadinimas + " " /*+ calculationsManhattan[3].dManhattan*/ + "\n\n" +
+                                                                              "5) " + calculationsManhattan[4].Pavadinimas + " " /*+ calculationsManhattan[4].dManhattan*/;
 
             }
             else

@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Gaukite viešbučio pasiūlymą atitinkantį Jūsų lūkesčius!
+Atlikite pasirinkimus skiltyje „Pageidavimai“ ir gaukite geriausiai Jūsų pageidavimus atitinkantį viešbučių sąrašą.
+
+Pasirinkimai esantys išskleidžiamuose meniu (ComboBox) yra būtini, žymimuosiuose langeliuose 
+esantys pasirinkimai yra neprivalomi, tai priklauso nuo Jūsų poreikių.
+</value>
+  </data>
 </root>
